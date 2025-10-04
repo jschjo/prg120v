@@ -1,10 +1,13 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
+<head>
+  <title>Eksempel 1</title>
+</head>
 <body>
- 
-<?php
-echo "My first PHP script!";
-?>
-
+  <h3>Eksempel 1</h3>
+    
+  <form method="post" action="phpkurs/phphomeexample.php" id="phphomeexample" name="phphomeexample">
+  
+  </form>
 </body>
-</html>         
+</html>   
