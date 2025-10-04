@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-<body>
- 
-<?php
-echo "My first PHP script!";
-?>
+<?php    /* Eksempel 1 */
+/*
+/*    Programmet mottar fra et HTML-skjema et fornavn og et etternavn ved POST-metoden
+/*    Programmet skriver ut en "god dag"-melding med personens navn 
+*/
 
-</body>
-</html>
+  print ("God dag <br />");  
+?>
