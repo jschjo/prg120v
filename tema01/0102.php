@@ -8,4 +8,4 @@
   $alder=$_POST ["alder"]
   
   print ("God dag $fornavn $etternavn, du er $alder og like sprek <br />");  
-?>    
+?>
