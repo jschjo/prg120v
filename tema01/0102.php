@@ -5,7 +5,7 @@
 */
   $fornavn=$_POST ["fornavn"];
   $etternavn=$_POST ["etternavn"];  
-  $year=$_POST ["year"]
+  $alder=$_POST ["alder"]
   
-  print ("God dag $fornavn $etternavn, du er $year og like sprek <br />");  
-?>
+  print ("God dag $fornavn $etternavn, du er $alder og like sprek <br />");  
+?>    
