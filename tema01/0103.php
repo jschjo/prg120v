@@ -13,5 +13,5 @@
     print ("Tall 1 er $tall1 <br />");
     print ("Tall 2 er $tall2 <br />");
     print ("Summen er $summen <br />");
-    print ("Differansen er $differnsen <br />");
+    print ("Differansen er $differansen <br />");
 ?>
