@@ -5,7 +5,6 @@
 */
   $tall1=$_POST ["tall1"];
   $tall2=$_POST ["tall2"];  
-  $sum=$_POST ["sum"];
 
   $summen=$tall1 + $tall2;
   $differansen=$tall1 - $tall2;
