@@ -6,6 +6,9 @@
   $tall1=$_POST ["tall1"];
   $tall2=$_POST ["tall2"];  
   $sum=$_POST ["sum"];
+
+  $summen=$tall1 + $tall2;
+  $differansen=$tall1 - $tall2;
   
-  print ("Tall 1 er $tall1, tall 2 er $tall2. Summen er $sum=$tall1 + $tall2. Differansen er $tall1 - $tall2 <br />"); 
-?>
+  print ("Tall 1 er $tall1, tall 2 er $tall2. Summen er $summen. Differansen er $differansen <br />"); 
+?>    
