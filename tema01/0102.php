@@ -3,9 +3,9 @@
 /*    Programmet mottar fra et HTML-skjema et fornavn og et etternavn ved POST-metoden
 /*    Programmet skriver ut en "god dag"-melding med personens navn 
 */
-  $fornavn=$_POST ["fornavn"];
-  $etternavn=$_POST ["etternavn"];  
-  $alder=$_POST ["alder"];
+  $tall1=$_POST ["tall1"];
+  $tall2=$_POST ["tall2"];  
+  $sum=$_POST ["sum"];
   
-  print ("God dag $fornavn $etternavn, du er $alder og like sprek <br />");  
+  print ("Tall 1 er $tall1, tall 2 er $tall2. Summen er $tall1 + $tall2. Differansen er $tall1 - $tall2 <br />");  
 ?>
