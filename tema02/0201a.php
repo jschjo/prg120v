@@ -7,19 +7,18 @@
   $tall2=$_POST ["tall2"]; 
   $tall3=$_POST ["tall3"]; 
 
-  $summen=$tall1 + $tall2;  
+  $summen=$tall1 * $tall2;  
 
     print ("Tall 1 er $tall1 <br />");
     print ("Tall 2 er $tall2 <br />");
     print ("<br />");
-    print ("Summen er $summen <br />");
+    print ("Du skrev at summen er $tall3 <br />");
 
 
 if ($summen == $tall3)    
   {  
-    print ("Summen er riktig!");
-} 
+    print ("Riktig. $tall1 ganger $tall2 er $summen"); 
+  }
 else {
-  print ("Prov igjen!");
+  print ("Det er feil. $tall1 ganger $tall2 er $summen. Prov gjerne igjen!");
 } 
-?> 
