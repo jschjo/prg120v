@@ -12,7 +12,7 @@
     print ("Tall 1 er $tall1 <br />");
     print ("Tall 2 er $tall2 <br />");
     print ("<br />");
-    print ("Du skrev at summen er $summen <br />");
+    print ("Du skrev at summen er $tall3 <br />");
 
 
 if ($summen == $tall3)    
@@ -22,4 +22,4 @@ if ($summen == $tall3)
 else {
   print ("Det er feil. $tall1 ganger $tall2 er $summen. Prov gjerne igjen!");
 } 
-?> 
+?>  
