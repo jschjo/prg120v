@@ -15,9 +15,11 @@
     print ("Summen er $summen <br />");
 
 
-if ($summen == $tall3)  {  
-  echo "Summen er riktig! ";
-} else {
-  echo "Prov igjen!";
-}
-?>  
+if ($summen == $tall3)    
+  {  
+    print ("Summen er riktig!");
+} 
+else {
+  print ("Prov igjen!");
+} 
+?> 
