@@ -13,4 +13,13 @@
     print ("Tall 2 er $tall2 <br />");
     print ("<br />");
     print ("Summen er $summen <br />");
+
+
+if ($tall + $tall2 == $tall3)  
+{  echo "Summen er riktig";
+} 
+if - else{
+if echo ("Prov igjen")  
+}
+
 ?>
