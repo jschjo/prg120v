@@ -7,7 +7,7 @@
   $tall2=$_POST ["tall2"]; 
   $tall3=$_POST ["tall3"]; 
 
-  $summen=$tall1 + $tall2;  
+  $summen=$tall1 * $tall2;  
 
     print ("Tall 1 er $tall1 <br />");
     print ("Tall 2 er $tall2 <br />");
