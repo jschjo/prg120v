@@ -21,5 +21,4 @@ if ($tall + $tall2 == $tall3)
 if - else{
 if echo ("Prov igjen")  
 }
-
 ?>
