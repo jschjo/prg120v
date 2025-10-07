@@ -18,6 +18,6 @@
 if ($tall + $tall2 == $tall3)  
 {  echo "Summen er riktig";
 } else {
-if echo ("Prov igjen")  
+  echo "Prov igjen"
 }
 ?>
