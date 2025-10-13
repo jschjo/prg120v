@@ -7,26 +7,32 @@
       $tall2=$_POST ["tall2"];
       $tall3=$_POST ["tall3"];
 
+
+      $1=$tall1 + $tall2;   //addisjon
+      $2=$tall1 - $tall2;   //subtraksjon
+      $3=$tall1 * $tall2;   //multiplikasjon
+      $4=$tall1 / $tall2;   //divisjon
+
       
-      if (!$gift || !$barn)  
+      if ($tall3 > 4)  
         {
-          print("Du har ikke svart p&aring; begge sp&oslash;rsm&aring;lene om du er gift og har barn ");
+          print("Det er ikke angitt en gyldig regneoperasjon");
         }
-      else if ($gift == "j" && $barn == "j")  
+      else if ($tall3 == 1)  
         {
-          print(" Du er gift og har barn");
+          print $1 ("Regneoperasjonen er Addisjon");
         }   
-      else if ($gift == "j" && $barn == "n")  
+      else if ($tall3 == 2)   
         {
-          print("Du er gift og har ikke barn");
+          print $2 ("Regneoperasjonen er Substraksjon");
         }
-      else if ($gift == "n" && $barn == "j")  
+      else if ($tall3 == 3)  
         {
-          print("Du er ikke gift og har barn");
+          print $3 ("Regneoperasjonen er Multiplikasjon");
         }   
-      else if ($gift == "n" && $barn == "n")           
+      else if ($tall3 == 4)           
         {
-          print("Du er ikke gift og har ikke barn");
+          print $4 ("Regneoperasjonen er Divisjon");
         }  
           else  
         {   
