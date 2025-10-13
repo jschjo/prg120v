@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Eksempel 1</title>
+  <title>oOppgave 3</title>
 </head>
 <body>
-  <h3>Eksempel 1</h3>
+  <h3>Oppgave 3</h3>
     
   <form method="post" action="tema02/0203.php" id="0203" name="0203">
     Er du student (j/n)? <input type="text" id="svar" name="svar" required  /> <br />
