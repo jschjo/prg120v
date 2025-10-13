@@ -18,10 +18,9 @@
     {
       print("Du er gift og har ikke barn");
     }
-  else if ($svar == "j" && $svar2 == "n")  
+  else if ($svar == "n" && $svar2 == "j")  
     {
       print("Du er ikke gift og har barn");
-
     }
   else ($svar == "n" && $svar2 == "n")           
     {
