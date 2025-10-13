@@ -6,7 +6,7 @@
   $gift=$_POST ["gift"];
   $barn=$_POST ["barn"];
 	
-  if (!$gift || !$barn || $gift || !$barn ||  !$gift || $barn)  
+  if (!$gift || !$barn)  
     {
       print("Du har ikke svart p&aring; begge sp&oslash;rsm&aring;lene om du er gift og har barn ");
     }
@@ -26,5 +26,9 @@
     {
       print("Du er ikke gift og har ikke barn");
     }  
+      else  
+    {   
+      print("Begge sp&oslash;rsm&aring;lene har ikke gyldige svar");
+    }
      
   ?>  
