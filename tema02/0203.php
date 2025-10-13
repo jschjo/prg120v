@@ -9,11 +9,11 @@
     {
       print("Du har ikke svart &aring; sp&oslash;rsm&aring;let om du er student ");
     }
-  else if ($svar == "j" || $svar == "J" || $svar == "ja" || $svar == "JA" ||== "Ja")  
+  else if ($svar == "j" || $svar == "J" || $svar == "ja" || $svar == "JA" || $svar == "Ja")  
     {
       print("Du har svart ja p&aring; sp&oslash;rsm&aring;let om du er student ");
     }   
-  else if ($svar == "n" || $svar == "N" || $svar == "nei" || $svar == "NEI" ||== "Nei")  
+  else if ($svar == "n" || $svar == "N" || $svar == "nei" || $svar == "NEI" || $svar == "Nei")  
     {
       print("Du har svart nei p&aring; sp&oslash;rsm&aring;let om du er student ");
     }
@@ -22,4 +22,4 @@
       print("Du har ikke svart ja eller nei p&aring; sp&oslash;rsm&aring;let om du er student ");
     }   
 
-?>      
+  ?>      
