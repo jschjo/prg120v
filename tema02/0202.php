@@ -5,7 +5,7 @@
 */
   $svar=$_POST ["svar"];
 	
-  if ($svar != j);  
+  if ($svar != || j);  
     {
       print("Du har ikke svart på spørsmålet om du er student");
     }
@@ -13,7 +13,8 @@
     {
       print("Du har svart ja på spørsmålet om du er student");
     }
-    else {
-        print("Du har svart nei på spørsmålet om du er student");
+    else 
+    {
+     print("Du har svart nei på spørsmålet om du er student");
     }
-?>      
+?>              
