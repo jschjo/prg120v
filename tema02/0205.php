@@ -10,16 +10,16 @@
 
       $1=$tall1 + $tall2;   //addisjon
       $2=$tall1 - $tall2;   //subtraksjon
-      $3=$tall1 * $tall2;   //multiplikasjon
+      $3=$tall1 * $tall;   //multiplikasjon
       $4=$tall1 / $tall2;   //divisjon
 
       
-      if ($tall3 > 4)  
+      if ($tall3 > 4)   
         {
-          print("Det er ikke angitt en gyldig regneoperasjon");
+          print ("Det er ikke angitt en gyldig regneoperasjon");
         }
       else if ($tall3 == 1)  
-        {
+        { 
           print $1 ("Regneoperasjonen er Addisjon");
         }   
       else if ($tall3 == 2)   
