@@ -7,7 +7,7 @@
 	
   if (!$svar)  
     {
-      print("Du har ikke svart p&aring; sp&oslash;rsm&aring;let om du er student ");
+      print("Du har ikke svart &aring; sp&oslash;rsm&aring;let om du er student ");
     }
   else if ($svar == "j")  
     {
