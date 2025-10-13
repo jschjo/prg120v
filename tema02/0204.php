@@ -27,18 +27,4 @@
       print("Du er ikke gift og har ikke barn");
     }  
      
-  ?>        
-
-  /*if ($a > 10) {
-  echo "Above 10";
-  if ($a > 20) {
-    echo " and also above 20";
-  } else {
-    echo " but not above 20";
-  }
-}*/
-
-/*Du er gift og har barn 
-• Du er gift og har ikke barn 
-• Du er ikke gift og har barn 
-• Du er ikke gift og har ikke barn */
+  ?>
