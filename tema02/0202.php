@@ -5,15 +5,15 @@
 */
   $svar=$_POST ["svar"];
 	
-  if ($svar != || j);  
+  if (!$svar)    
     {
       print("Du har ikke svart på spørsmålet om du er student");
     }
-  elseif  
+  elseif ($svar == j)     
     {
       print("Du har svart ja på spørsmålet om du er student");
     }
-    else 
+    else ($svar == j) 
     {
      print("Du har svart nei på spørsmålet om du er student");
     }
