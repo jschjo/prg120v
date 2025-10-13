@@ -22,7 +22,7 @@
     {
       print("Du er ikke gift og har barn");
     }   
-  else     ($gift == "n" && $barn == "n")           
+  else if ($gift == "n" && $barn == "n")           
     {
       print("Du er ikke gift og har ikke barn");
     }  
