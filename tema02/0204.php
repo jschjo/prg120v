@@ -25,8 +25,8 @@
   else if ($svar == "n" && $svar2 == "n")           
     {
       print("Du er ikke gift og har ikke barn");
-    }   
-
+    }  
+     
   ?>        
 
   /*if ($a > 10) {
@@ -36,9 +36,9 @@
   } else {
     echo " but not above 20";
   }
-}   
+}*/
 
-• Du er gift og har barn 
+/*Du er gift og har barn 
 • Du er gift og har ikke barn 
 • Du er ikke gift og har barn 
 • Du er ikke gift og har ikke barn */
