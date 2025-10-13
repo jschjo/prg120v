@@ -5,7 +5,7 @@
 */
   $svar=$_POST ["svar"];
 	
-  if ($svar == j)  
+  if ($svar == j);  
     {
       print("Er du student (j/n) ?");
     }
