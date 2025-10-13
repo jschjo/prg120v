@@ -13,7 +13,7 @@
     {
       print("Du har svart ja på spørsmålet om du er student");
     }
-    else ($svar == "j") 
+    else ($svar == "n") 
     {
      print("Du har svart nei på spørsmålet om du er student");
     }
