@@ -8,7 +8,7 @@
       $tall3=$_POST ["tall3"];
 
 
-      $1=$tall1 + $tall2;   //addisjon
+      $1=$tall1 + $tall2;   //addisjon      
       $2=$tall1 - $tall2;   //subtraksjon
       $3=$tall1 * $tall;   //multiplikasjon
       $4=$tall1 / $tall2;   //divisjon
@@ -16,23 +16,22 @@
       
       if ($tall3 > 4)   
         {
-          print ("Det er ikke angitt en gyldig regneoperasjon");
+          print("Det er ikke angitt en gyldig regneoperasjon");
         }
-      else if ($tall3 == 1)  
+      else if ($1 && $tall3 == 1)  
         { 
-          print $1 ("Regneoperasjonen er Addisjon");
+          print("Regneoperasjonen er Addisjon");
         }   
-      else if ($tall3 == 2)   
+      else if ($2 && $tall3 == 2)   
         {
-          print $2 ("Regneoperasjonen er Substraksjon");
+          print("Regneoperasjonen er Substraksjon");
         }
-      else if ($tall3 == 3)  
+      else if ($3 && $tall3 == 3)  
         {
-          print $3 ("Regneoperasjonen er Multiplikasjon");
+          print("Regneoperasjonen er Multiplikasjon");
         }   
-      else if ($tall3 == 4)           
-        {
-          print $4 ("Regneoperasjonen er Divisjon");
+      else if ($4 && $tall3 == 3) 
+          print("Regneoperasjonen er Divisjon");
         }  
           else  
         {   
