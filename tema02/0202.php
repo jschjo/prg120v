@@ -5,20 +5,21 @@
 */
   $svar=$_POST ["svar"];
 	
-  if (!$svar)    
+  if (!$svar)  
     {
-      print("Du har ikke svart på spørsmålet om du er student");
+      print("Du har ikke svart p&aring; sp&oslash;rsm&aring;let om du er student ");
     }
-  elseif ($svar == "j")     
+  else if ($svar == "j")  
     {
-      print("Du har svart ja på spørsmålet om du er student"  );
-    } 
-    else ($svar == "n") 
-    {
-     print("Du har svart nei på spørsmålet om du er student");
+      print("Du har svart j p&aring; sp&oslash;rsm&aring;let om du er student ");
     }
-     else  
+  else if ($svar == "n") 
+    {
+      print("Du har svart n p&aring; sp&oslash;rsm&aring;let om du er student ");
+    }
+  else  
     {
       print("Du har ikke svart j eller n p&aring; sp&oslash;rsm&aring;let om du er student ");
     }
-?>              
+
+?>         
