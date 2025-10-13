@@ -5,12 +5,12 @@
 */
   $svar=$_POST ["svar"];
 	
-  if ($svar == 9)  
+  if ($svar == j)  
     {
-      print("Riktig. 3 ganger 3 er 9 ");
+      print("Er du student (j/n) ?");
     }
   else  
     {
-      print("Feil. 3 ganger 3 er ikke  $svar. 3 ganger 3 er 9 ");
+      print("Du har svart nei på spørsmålet om du er student");
     }
-?>
+?>      
