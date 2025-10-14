@@ -14,16 +14,10 @@
         }
       else if ($tall3 == 1)  
         {
-          print ("Tall 1 er $tall1. Tall 2 er $tall2. Regneoperasjonen er Addisjon. Resultatet av regneoperasjonen er $tall1*$tall2");
-
-          //print ("Tall 1 er $tall1 <br/>")
-          //print ("Tall 2 er $tall2 <br/> <br/>");
-          //print ("Regneoperasjonen er Addisjon <br/>");
-          //print ("Resultatet av regneoperasjonen er $resultat <br/>"); /* resultater skrevet ut *
-
-
-
-
+          print ("Tall 1 er $tall1 <br/>")
+          print ("Tall 1 er $tall2 <br/>");
+          print ("Regneoperasjonen er Addisjon <br/>");
+          print ("Resultatet av regneoperasjonen er $tall1*$tall2 <br/>");
         }
       else if ($tall3 == 2)   
         {
