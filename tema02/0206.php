@@ -25,17 +25,12 @@
           print ("Tall 1 er $tall2 <br/>");
           print ("$tall er lik   enn $tall2 <br/>");
         }
-      else if ($tall3 > 3)  
+      else if ($tall1 > $tall2)  
         {
-         $resultat=$tall1 * $tall2;
 
           print ("Tall 1 er $tall1 <br/>"); 
           print ("Tall 1 er $tall2 <br/>");
           print ("$tall er større enn $tall2 <br/>");
-        }   
-      else if ($tall3 == 4) 
-        {
-    
         }
           else  
         {   
