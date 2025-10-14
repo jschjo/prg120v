@@ -23,15 +23,30 @@
         }
       else if ($tall3 == 2)   
         {
-          print("Regneoperasjonen er Substraksjon");
+         $resultat=$tall1 - $tall2;
+
+          print ("Tall 1 er $tall1 <br/>"); 
+          print ("Tall 1 er $tall2 <br/>");
+          print ("Regneoperasjonen er Substraksjon <br/>");
+          print ("Resultatet av regneoperasjonen er $resultat <br/>");
         }
       else if ($tall3 == 3)  
         {
-          print("Regneoperasjonen er Multiplikasjon");
+         $resultat=$tall1 * $tall2;
+
+          print ("Tall 1 er $tall1 <br/>"); 
+          print ("Tall 1 er $tall2 <br/>");
+          print ("Regneoperasjonen er Multiplikasjon <br/>");
+          print ("Resultatet av regneoperasjonen er $resultat <br/>");
         }   
       else if ($tall3 == 4) 
         {
-          print("Regneoperasjonen er Divisjon");
+          $resultat=$tall1 / $tall2;
+
+          print ("Tall 1 er $tall1 <br/>"); 
+          print ("Tall 1 er $tall2 <br/>");
+          print ("Regneoperasjonen er Divisjon <br/>");
+          print ("Resultatet av regneoperasjonen er $resultat <br/>");
         }  
           else  
         {   
