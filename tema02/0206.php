@@ -16,21 +16,21 @@
 
           print ("Tall 1 er $tall1 <br/>"); 
           print ("Tall 1 er $tall2 <br/>");
-          print ("$tall1 er mindre enn $tall2 <br/>");
+          print ("Tall 1 er mindre enn Tall 2 <br/>");
         }
       else if ($tall1 == $tall2)   
         {
         
           print ("Tall 1 er $tall1 <br/>"); 
           print ("Tall 1 er $tall2 <br/>");
-          print ("$tall1 er lik $tall2 <br/>");
+          print ("Tall 1 er lik Tall 1 <br/>");
         }
       else if ($tall1 > $tall2)  
         {
 
           print ("Tall 1 er $tall1 <br/>"); 
           print ("Tall 1 er $tall2 <br/>");
-          print ("$tall1 er st&oslash;rre enn $tall2 <br/>");
+          print ("Tall 1 er st&oslash;rre enn Tall 2<br/>");
         }
           else  
         {   
