@@ -23,7 +23,7 @@
         
           print ("Tall 1 er $tall1 <br/>"); 
           print ("Tall 1 er $tall2 <br/>");
-          print ("Tall 1 er lik Tall 1 <br/>");
+          print ("Tall 1 er lik Tall 2 <br/>");
         }
       else if ($tall1 > $tall2)  
         {
