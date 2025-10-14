@@ -7,10 +7,10 @@
       $tall2=$_POST ["tall2"];
       $tall3=$_POST ["tall3"];
 
-      $a=$tall1 + $tall2;
-      $s=$tall1 - $tall2;
-      $m=$tall1 * $tall2;
-      $d=$tall1 / $tall2;
+      //$a=$tall1 + $tall2;
+      //$s=$tall1 - $tall2;
+     // $m=$tall1 * $tall2;
+      //$d=$tall1 / $tall2;
 
 
 
