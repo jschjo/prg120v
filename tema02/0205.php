@@ -21,7 +21,7 @@
         }
       else if ($tall3 == 1)  
         {
-          print("Regneoperasjonen er Addisjon");
+          print("Tall 1 er $tall1. Tall 2 er $tall2. Regneoperasjonen er Addisjon. Resultatet av regneoperasjonen er $a")
         }   
       else if ($tall3 == 2)   
         {
