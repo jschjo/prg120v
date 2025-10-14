@@ -19,7 +19,7 @@
         {
           print("Det er ikke angitt en gyldig regneoperasjon");
         }
-      else if ($tall3 == 1 $$)  
+      else if ($tall3 == 1)  
         {
           print("Regneoperasjonen er Addisjon");
         }   
