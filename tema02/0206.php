@@ -32,9 +32,5 @@
           print ("Tall 1 er $tall2 <br/>");
           print ("Tall 1 er st&oslash;rre enn Tall 2<br/>");
         }
-          else  
-        {   
-          print("Begge sp&oslash;rsm&aring;lene har ikke gyldige svar");
-        }
         
       ?>  
