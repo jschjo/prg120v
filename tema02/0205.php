@@ -24,7 +24,7 @@
       else if ($tall3 == 2)   
         {
          $resultat=$tall1 - $tall2;
-          
+
           print ("Tall 1 er $tall1 <br/>"); 
           print ("Tall 1 er $tall2 <br/>");
           print ("Regneoperasjonen er Substraksjon <br/>");

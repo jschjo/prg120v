@@ -5,10 +5,9 @@
     */
       $tall1=$_POST ["tall1"];
       $tall2=$_POST ["tall2"];
-      $tall3=$_POST ["tall3"];
 
 
-      if ($tall3 > 4)   
+      if (!$tall1 || !$tall2);   
         {
           print("Det er ikke angitt en gyldig regneoperasjon");
         }
