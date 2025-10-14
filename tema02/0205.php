@@ -14,7 +14,7 @@
         }
       else if ($tall3 == 1)  
         {
-          print ("Tall 1 er $tall1 <br/>")
+          print ("Tall 1 er $tall1 <br/>");
           print ("Tall 1 er $tall2 <br/>");
           print ("Regneoperasjonen er Addisjon <br/>");
           print ("Resultatet av regneoperasjonen er $tall1*$tall2 <br/>");
