@@ -7,21 +7,23 @@
       $tall2=$_POST ["tall2"];
       $tall3=$_POST ["tall3"];
 
-      //$a=$tall1 + $tall2;
-      //$s=$tall1 - $tall2;
-     // $m=$tall1 * $tall2;
-      //$d=$tall1 / $tall2;
 
-
-
-      
       if ($tall3 > 4)   
         {
           print("Det er ikke angitt en gyldig regneoperasjon");
         }
       else if ($tall3 == 1)  
         {
-          print ("Tall 1 er "$tall1". Tall 2 er" $tall2". Regneoperasjonen er Addisjon");
+          print ("Tall 1 er $tall1. Tall 2 er $tall2. Regneoperasjonen er Addisjon. Resultatet av regneoperasjonen er $tall1*$tall2");
+
+          //print ("Tall 1 er $tall1 <br/>")
+          //print ("Tall 2 er $tall2 <br/> <br/>");
+          //print ("Regneoperasjonen er Addisjon <br/>");
+          //print ("Resultatet av regneoperasjonen er $resultat <br/>"); /* resultater skrevet ut *
+
+
+
+
         }
       else if ($tall3 == 2)   
         {
