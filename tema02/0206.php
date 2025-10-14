@@ -30,7 +30,7 @@
 
           print ("Tall 1 er $tall1 <br/>"); 
           print ("Tall 1 er $tall2 <br/>");
-          print ("$tall er større enn $tall2 <br/>");
+          print ("$tall er st&oslash;rre enn $tall2 <br/>");
         }
           else  
         {   
