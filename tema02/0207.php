@@ -27,7 +27,7 @@
         {
           print ("Tall 1 er st&oslash;rre enn Tall 2<br/>");
         }
-              else if ($tall1 < $tall3)   
+      if ($tall1 < $tall3)   
         {   
 
           print ("Tall 1 er mindre enn Tall 3 <br/>");
@@ -41,7 +41,7 @@
         {
           print ("Tall 1 er st&oslash;rre enn Tall 3<br/>");
         } 
-        else if ($tall2 < $tall3)   
+       if ($tall2 < $tall3)   
         {   
 
            print ("Tall 2 er mindre enn Tall 3 <br/>");
