@@ -53,8 +53,7 @@
           print ("Tall 1 er $tall1 <br/>"); 
           print ("Tall 1 er $tall3 <br/>");
           print ("Tall 1 er st&oslash;rre enn Tall 3<br/>");
-
-
+        } 
         else if ($tall2 < $tall3)   
         {   
 
@@ -75,5 +74,6 @@
           print ("Tall 2 er $tall2 <br/>"); 
           print ("Tall 3 er $tall3 <br/>");
           print ("Tall 2 er st&oslash;rre enn Tall 3<br/>");
-    
+        }
+            
       ?>  
