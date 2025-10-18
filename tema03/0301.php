@@ -12,10 +12,9 @@
 //}
 
 
-$tall=0;
+$tall=1;
 
-{
-for ($tall<=10;$tall++) }
+for ($tall<=10;$tall++)
 {
 print("$tall <br/>");
 }
