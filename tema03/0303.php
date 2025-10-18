@@ -9,7 +9,7 @@
 for ($tall=1;$tall<=10;$tall++)
 {
 //$kvadrat=$tall*$tall;
-print("$tall<br/>"); 
+print("$tall"); 
 }
 for ($tall=10;$tall<=20;$tall++)
 {
