@@ -14,11 +14,11 @@ print("$tall<br/>");
 for ($tall=10;$tall<=20;$tall++)
 {
 //$kvadrat=$tall*$tall;
-print("$tall har kvadratet $kvadrat<br/>"); 
+print("$tall<br/>"); 
 }
 for ($tall=20;$tall<=30;$tall++)
 {
 //$kvadrat=$tall*$tall;
-print("$tall har kvadratet $kvadrat<br/>"); 
+print("$tall<br/>"); 
 }
 ?>
