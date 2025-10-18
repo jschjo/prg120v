@@ -13,4 +13,4 @@
     {
       print("Feil. 3 ganger 3 er ikke  $svar. 3 ganger 3 er 9 ");
     }
-?>
+?>      

@@ -1,4 +1,4 @@
-<?php    /* Oppgave 1*/
+<?php    /* Oppgave 8*/
 /*
 /*    Programmet mottar fra et HTML-skjema et fornavn og et etternavn ved POST-metoden
 /*    Programmet skriver ut en "god dag"-melding med personens navn 
@@ -22,4 +22,4 @@ if ($summen == $tall3)
 else {
   print ("Det er feil. $tall1 ganger $tall2 er $summen. Prov gjerne igjen!");
 } 
-?> 
+?>  
