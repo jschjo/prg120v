@@ -1,25 +1,16 @@
-<?php    /* Oppgave 8*/
+<?php     /* Oppgave 8 */
 /*
-/*    Programmet mottar fra et HTML-skjema et fornavn og et etternavn ved POST-metoden
-/*    Programmet skriver ut en "god dag"-melding med personens navn 
+/*    Programmet mottar fra et HTML-skjema et svar på spørsmålet "Hva er 3 ganger 3 ?"
+/*    Programmet sjekker om svaret er riktig og skriver ut en melding ang. svaret 
 */
-  $tall1=$_POST ["tall1"];
-  $tall2=$_POST ["tall2"]; 
-  $tall3=$_POST ["tall3"]; 
-
-  $summen=$tall1 * $tall2;  
-
-    print ("Tall 1 er $tall1 <br />");
-    print ("Tall 2 er $tall2 <br />");
-    print ("<br />");
-    print ("Du skrev at summen er $tall3 <br />");
-
-
-if ($summen == $tall3)    
-  {  
-    print ("Riktig. $tall1 ganger $tall2 er $summen"); 
-  }
-else {
-  print ("Det er feil. $tall1 ganger $tall2 er $summen. Prov gjerne igjen!");
-} 
-?>  
+  $svar=$_POST ["svar"];
+	
+  if ($svar == 9)  
+    {
+      print("Riktig. 3 ganger 3 er 9 ");
+    }
+  else  
+    {
+      print("Feil. 3 ganger 3 er ikke  $svar. 3 ganger 3 er 9 ");
+    }
+?>    

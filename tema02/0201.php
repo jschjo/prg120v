@@ -17,7 +17,7 @@
 
 if ($summen == $tall3)    
   {  
-    print ("Riktig. $tall1 ganger $tall2 er $summen"); 
+    print ("Riktig. $tall1 ganger $tall2 er $summen");  
   }
 else {
   print ("Det er feil. $tall1 ganger $tall2 er $summen. Prov gjerne igjen!");
