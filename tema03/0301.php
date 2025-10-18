@@ -3,8 +3,8 @@
 <body>
 
 <?php  
-$i = 0;
-for ($i < 10) {
+
+for ($x = 0; $x <= 10; $x++) {
   echo $i "<br>";
 }
 
