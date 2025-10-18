@@ -15,8 +15,7 @@
 $tall=0;
 
 {
-for ($tall<=10;$tall++); 
-}
+for ($tall<=10;$tall++) }
 {
 print("$tall <br/>");
 }
