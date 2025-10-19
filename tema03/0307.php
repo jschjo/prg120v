@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Oppgave 7 </title>
-</head>
-<body>
-  <h3>Oppgave 7</h3>
-    
-
 <?php /* Oppgave 7 */
 /*
 /* Programmet mottar et navn fra et HTML-skjema
