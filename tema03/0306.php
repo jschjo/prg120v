@@ -27,7 +27,7 @@ if ($svar <= 0) /* angitt tall er ikke et positivt heltall */
 print("Tallet $svar er ikke et positivt heltall <br/>");
 }
 else
-{
+
 for ($tall=1;$tall<=$svar;$tall++) /* repetisjon fra 1 til det angitte tallet */
 {
 print("$tall <br/>");
