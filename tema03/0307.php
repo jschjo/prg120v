@@ -26,3 +26,5 @@ print("$tall <br/>"); /* tallet skrevet ut */
 }
 }
 ?>  
+
+   

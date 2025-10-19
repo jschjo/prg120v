@@ -14,14 +14,24 @@
 </body>
 </html>
 
+
 <?php /* Oppgave 6 */
 /*
-/* Programmet skriver ut tallene fra 1 til 10 på hver sin linje
+/* Programmet mottar fra et HTML-skjema et tall (positivt heltall)
+/* Programmet skriver ut tallene fra 1 til det angitte tallet
 */
-if (isset($_POST ["fortsett"])) {
-for ($tall=1;$tall<=10;$tall++) /* repetisjon fra 1 til 10 */
+$svar=$_POST ["svar"];
+
+if ($svar <= 0) /* angit tall er ikke et positivt heltall */
+{
+print("Tallet $svar er ikke et positivt heltall <br/>");
+}
+else
+{
+for ($tall=1;$tall<=$svar;$tall++) /* repetisjon fra 1 til det angitte tallet */
 {
 print("$tall <br/>"); /* tallet skrevet ut */
 }
 }
-?>  
+?>
+
