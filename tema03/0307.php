@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Oppgave 6  </title>
+  <title>Oppgave 7  </title>
 </head>
 <body>
-  <h3>Oppgave 6</h3>
+  <h3>Oppgave 7</h3>
     
-  <form method="post" action="" id="0306" name="0306">
-    Skriv inn et postivt heltall <input type="text" id="svar" name="svar" required  /> <br />
+<form method="post" action="" id="0307" name="0307">
+ Skriv inn fornavn <input type="text" id="svar" name="svar" required  /> <br />
+ Skriv inn etternavn <input type="text" id="svar" name="svar" required  /> <br />
     <input type="submit" value="Fortsett" id="fortsett" name="fortsett" />
     <input type="reset" value="Nullstill" name="nullstill" id="nullstill" /> <br />
-  </form>
+   </form>
 </body>
 </html>
 
-<?php /* Oppgave 6 */
+<?php /* Oppgave 7 */
 /*
 /* Programmet skriver ut tallene fra 1 til 10 på hver sin linje
 */
