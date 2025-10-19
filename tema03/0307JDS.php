@@ -17,13 +17,11 @@
 
 <?php /* Oppgave 7 */
 /*
-/* Programmet mottar et navn fra et HTML-skjema
-/* Programmet skriver ut fornavn og etternavn hver for seg
+/* Programmet skriver ut tallene fra 1 til 10 på hver sin linje
 */
-$navn=$_POST["navn"];
-$oppdeltNavn=explode(" ",$name);
-$fornavn=$oppdeltNavn[0];
-$etternavn=$oppdeltNavn[1];
-print("Fornavnet er $fornavn <br/>");
-print("Etternavnet er $etternavn <br/>"); /* fornavn og etternavn skrevet ut hver for seg */
-?>
+  $fornavn=$_POST ["fornavn"];
+  $etternavn=$_POST ["etternavn"]; 
+
+    print ("Fornavnet er $fornavn <br />");
+    print ("Etternavnet er $etternavn <br />");
+?>      
