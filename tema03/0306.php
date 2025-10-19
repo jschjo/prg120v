@@ -4,7 +4,7 @@
   <title>Oppgave 6  </title>
 </head>
 <body>
-  <h3>Eksempel 1</h3>
+  <h3>Oppgave 6</h3>
     
   <form method="post" action="" id="0306" name="0306">
     Skriv inn et heltall under 10 <input type="text" id="svar" name="svar" required  /> <br />
@@ -14,7 +14,7 @@
 </body>
 </html>
 
-<?php /* Oppgave 1 */
+<?php /* Oppgave 6 */
 /*
 /* Programmet skriver ut tallene fra 1 til 10 på hver sin linje
 */
