@@ -12,6 +12,8 @@
 /* Programmet mottar et navn fra et HTML-skjema
 /* Programmet skriver ut fornavn og etternavn hver for seg
 */
+
+
 $navn=$_POST["navn"];
 $oppdeltNavn=explode(" ",$navn);
 $fornavn=$oppdeltNavn[0];
