@@ -11,4 +11,3 @@ $etternavn=$oppdeltNavn[1];
 print("Fornavnet er $fornavn <br/>");
 print("Etternavnet er $etternavn <br/>"); /* fornavn og etternavn skrevet ut hver for seg */
 ?>
-            
