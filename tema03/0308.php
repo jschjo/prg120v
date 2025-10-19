@@ -5,7 +5,7 @@
 /* Programmet skriver ut tallene fra 1 til det angitte tallet
 */
 
-$numbers="svar",
+$numbers=$_POST ["svar"];
 
 $numbers= [
   0 => "1",
