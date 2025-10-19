@@ -22,20 +22,17 @@
 */
 $svar=$_POST ["svar"];
 
-if ($svar <= 0) /* angit tall er ikke et positivt heltall */
+if ($svar <= 0) /* angitt tall er ikke et positivt heltall */
 {
 print("Tallet $svar er ikke et positivt heltall <br/>");
 }
-
-elseif 
-{
-print("Tallet $svar er et positivt heltall <br/>"); /* tallet skrevet ut */
-}
-
 else
 {
-print("Du har ikke oppgitt et positivt heltall");
+for ($tall=1;$tall<=$svar;$tall++) /* repetisjon fra 1 til det angitte tallet */
+{
+print("$tall <br/>");
 }
 
 ?>
+
 
