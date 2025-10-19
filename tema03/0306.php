@@ -26,12 +26,9 @@ if ($svar <= 0) /* angit tall er ikke et positivt heltall */
 {
 print("Tallet $svar er ikke et positivt heltall <br/>");
 }
-else
+else 
 {
-for ($tall=1;$tall<=$svar;$tall++) /* repetisjon fra 1 til det angitte tallet */
-{
-print("$tall <br/>"); /* tallet skrevet ut */
-}
+print("Tallet $svar er et positivt heltall <br/>"); /* tallet skrevet ut */
 }
 ?>
 
