@@ -20,19 +20,19 @@
 /* Programmet mottar fra et HTML-skjema et tall (positivt heltall)
 /* Programmet skriver ut tallene fra 1 til det angitte tallet
 */
-$svar=$_POST ["svar"];
-
-if ($svar <= 0) /* angitt tall er ikke et positivt heltall */
+$angittTall=$_POST ["angittTall"];
+if ($angittTall <= 0) /* angit tall er ikke et positivt heltall */
 {
-print("Tallet $svar er ikke et positivt heltall <br/>");
+print("Tallet $angittTall er ikke et positivt heltall <br/>");
 }
 else
-
-for ($tall=1;$tall<=$svar;$tall++) /* repetisjon fra 1 til det angitte tallet */
 {
-print("$tall <br/>");
+for ($tall=1;$tall<=$angittTall;$tall++) /* repetisjon fra 1 til det angitte tallet */
+{
+print("$tall <br/>"); /* tallet skrevet ut */
 }
-
+}
 ?>
+
 
 
