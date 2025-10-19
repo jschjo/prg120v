@@ -1,13 +1,24 @@
-<?php /* Oppgave 7 */
-/*
-/* Programmet mottar et navn fra et HTML-skjema
-/* Programmet skriver ut fornavn og etternavn hver for seg
-*/
+<?php     /* Oppgave 8 */ 
+/* 
+/*    Programmet mottar 5 tall fra et HTML-skjema  
+/*    Programmet legger inn de 5 tallene i et array 
+/*    Programmet skriver ut de 5 tallene i samme rekkefølge som de ble mottatt 
+/*    Programmet skriver deretter ut tallene i motsatt rekkefølge 
+*/ 
+$tall1=$_POST ["tall1"]; 
+$tall2=$_POST ["tall2"]; 
+$tall3=$_POST ["tall3"]; 
+$tall4=$_POST ["tall4"]; 
+$tall5=$_POST ["tall5"];     
 
-$navn=$_POST["navn"];
-$oppdeltNavn=explode(" ",$navn);
-$fornavn=$oppdeltNavn[0];
-$etternavn=$oppdeltNavn[1];
-print("Fornavnet er $fornavn <br/>");
-print("Etternavnet er $etternavn <br/>"); /* fornavn og etternavn skrevet ut hver for seg */
-?>
+$tallArray=array($tall1,$tall2,$tall3,$tall4,$tall5);    /* de 5 tallene lagt inn i et array */  
+for ($tall=0;$tall<=4;$tall++) 
+{ 
+print("$tallArray[$tall] ");    /* de 5 tallene skrevet ut  */ 
+} 
+print("<br/>"); 
+for ($tall=4;$tall>=0;$tall--) 
+{ 
+print("$tallArray[$tall] ");    /* de 5 tallene skrevet ut i motsatt rekkefølge */ 
+} 
+?> 
