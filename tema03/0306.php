@@ -20,7 +20,7 @@
 /* Programmet mottar fra et HTML-skjema et tall (positivt heltall)
 /* Programmet skriver ut tallene fra 1 til det angitte tallet
 */
-$angittTall=$_POST ["angittTall"];
+$angittTall=$_POST ["svar"];
 if ($angittTall <= 0) /* angit tall er ikke et positivt heltall */
 {
 print("Tallet $angittTall er ikke et positivt heltall <br/>");
