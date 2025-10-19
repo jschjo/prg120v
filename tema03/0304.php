@@ -8,19 +8,7 @@
 */
 for ($tall=1;$tall<=10;$tall++)
 {
-print("$tall"); 
+$sum=$tall=1;$tall<=10;$tall++; 
 }
-print("<br/>");
-
-for ($tall=11;$tall<=20;$tall++)
-{
-print("$tall"); 
-}
-print("<br/>");
-
-for ($tall=21;$tall<=30;$tall++)
-{
-print("$tall");
-}
-print("<br/>");
+print("Summenen av tallene fra 1 til 10 er $sum<br/>");
 ?>
