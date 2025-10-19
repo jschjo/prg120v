@@ -2,12 +2,12 @@
 <html>
 <body>
 
-<?php /* Oppgave 3 */
+<?php /* Oppgave 4 */
 /*
 /* Programmet skriver ut tallene fra 1 til 10 på hver sin linje
 */
 
-$sum=0,
+$sum=0;
 for ($tall=1;$tall<=10;$tall++)
 {
 $sum=$sum+$tall; 
