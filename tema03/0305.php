@@ -13,7 +13,7 @@ $sum=0;
  $sum=$sum+$tall; 
  }
  print("Summenen av tallene fra 1 til 10 er $sum<br/>");
- $gjennomsnitt=$sum*$tall/10; 
+ $gjennomsnitt=($sum*$tall)/10; 
  {
  print("Gjennomsnitt av tallene fra 1 til 10 er $gjennomsnitt<br/>");
  }
