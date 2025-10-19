@@ -21,7 +21,7 @@
 /* Programmet skriver ut fornavn og etternavn hver for seg
 */
 $navn=$_POST["name"];
-$oppdeltNavn=explode(" ",$name);
+$oppdeltNavn=explode(" ",$navn);
 $fornavn=$oppdeltNavn[0];
 $etternavn=$oppdeltNavn[1];
 print("Fornavnet er $fornavn <br/>");
