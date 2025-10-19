@@ -5,6 +5,8 @@
 /* Programmet skriver ut tallene fra 1 til det angitte tallet
 */
 
+$numbers="svar",
+
 $numbers= [
   0 => "1",
   1 => "1",
