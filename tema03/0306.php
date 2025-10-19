@@ -26,10 +26,12 @@ if ($svar <= 0) /* angit tall er ikke et positivt heltall */
 {
 print("Tallet $svar er ikke et positivt heltall <br/>");
 }
+
 elseif 
 {
 print("Tallet $svar er et positivt heltall <br/>"); /* tallet skrevet ut */
 }
+
 else
 {
 print("Du har ikke oppgitt et positivt heltall");
