@@ -24,4 +24,4 @@
 
     print ("Fornavnet er $fornavn <br />");
     print ("Etternavnet er $etternavn <br />");
-?>      
+?> 
