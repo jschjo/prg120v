@@ -2,7 +2,7 @@
 <html>
  <body>
 
-<?php /* Oppgave 4 */
+<?php /* Oppgave 45 */
 /*
 /* Programmet skriver ut tallene fra 1 til 10 på hver sin linje
  */
