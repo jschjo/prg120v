@@ -1,28 +1,44 @@
-<?php     /* Oppgave 0402 */ 
+<?php     /* Oppgave 2 */ 
 /* 
-/*    Programmet mottar postnr fra et HTML-skjema  
-/*    Programmet sjekker om postnr er korrekt fylt ut 
+/*    Programmet mottar klassekode fra et HTML-skjema  
+/*    Programmet sjekker om klassekode er korrekt fylt ut 
 */ 
   $klassekode=$_POST ["svar"]; 
  
   $lovligKlassekode=true; 
  
-  if (!$klassekode)  /* klassekode er ikke fylt ut (! foran betyr "ikke"*/ 
+  if (!$klassekode)  /* klassekode er ikke fylt ut */ 
     { 
       $lovligKlassekode=false; 
       print("Klassekode er ikke fylt ut <br />"); 
     } 
-  else if (strlen($klassekode)!=3)  /* klassekode består ikke av 3 tegn  (strlen har med lengden på en tekststreng )*/ 
+  else if (strlen($klassekode)!=3)  /* klassekode består ikke av 3 tegn */ 
     { 
       $lovligKlassekode=false; 
-      print("Klassekode best&aring;r ikke av 2 bokstaver    og ett tall <br />"); 
+      print("Klassekode best&aring;r ikke av 3 tegn <br />"); 
     } 
-  else 
-    { 
-      if (is_numeric($klassekode))  /* is_numeric($variabelnavn) - true hvis variabelen inneholder et tall */ 
+  else  
+        { 
+      $tegn1=$klassekode[0];   /* første tegn i klassekoden  */ 
+      $tegn2=$klassekode[1];   /* andre tegn i klassekoden  */ 
+      $tegn3=$klassekode[2];   /* tredje tegn i klassekoden  */ 
+ 
+      if (!ctype_alpha($tegn1))  /* tegn1 er ikke bokstav */  
         { 
           $lovligKlassekode=false; 
-          print("Klassekode best&aring;r ikke bare av siffre  <br />"); 
+          print("F&oslash;rste tegn er ikke en bokstav <br />"); 
+        } 
+   
+      if (!ctype_alpha($tegn2))  /* tegn2 er ikke bokstav */ 
+        { 
+          $lovligKlassekode=false; 
+          print("Andre tegn er ikke en bokstav <br />"); 
+        } 
+   
+      if (!ctype_digit($tegn3))  /* tegn3 er ikke et siffer */  
+        { 
+          $lovligKlassekode=false; 
+          print("Siste tegn er ikke et siffer  <br />"); 
         } 
     } 
  
@@ -30,4 +46,4 @@
     { 
       print("Klassekode er korrekt fylt ut <br />"); 
     } 
-?>              
+?> 
