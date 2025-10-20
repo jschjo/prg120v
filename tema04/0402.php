@@ -21,7 +21,7 @@
     { 
       if (is_numeric($klassekode))  /* is_numeric($variabelnavn) - true hvis variabelen inneholder et tall */ 
         { 
-          lovligKlassekode=false; 
+          $lovligKlassekode=false; 
           print("Klassekode best&aring;r ikke bare av siffre  <br />"); 
         } 
     } 
