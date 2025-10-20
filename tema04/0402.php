@@ -30,4 +30,4 @@
     { 
       print("Klassekode er korrekt fylt ut <br />"); 
     } 
-?>          
+?>              
