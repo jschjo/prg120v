@@ -30,4 +30,4 @@
     { 
       print("Postnr er korrekt fylt ut <br />"); 
     } 
-?> 
+?>  
