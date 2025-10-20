@@ -12,14 +12,14 @@
       $lovligKlassekode=false; 
       print("Klassekode er ikke fylt ut <br />"); 
     } 
-  else if (strlen($postnr)!=3)  /* klassekode består ikke av 3 tegn  (strlen har med lengden på en tekststreng )*/ 
+  else if (strlen($klassekode)!=3)  /* klassekode består ikke av 3 tegn  (strlen har med lengden på en tekststreng )*/ 
     { 
       $lovligKlassekode=false; 
       print("Klassekode best&aring;r ikke av 2 bokstaver    og ett tall <br />"); 
     } 
   else 
     { 
-      if (is_numeric($lovligKlassekode))  /* is_numeric($variabelnavn) - true hvis variabelen inneholder et tall */ 
+      if (is_numeric($klassekode))  /* is_numeric($variabelnavn) - true hvis variabelen inneholder et tall */ 
         { 
           lovligKlassekode=false; 
           print("Klassekode best&aring;r ikke bare av siffre  <br />"); 
