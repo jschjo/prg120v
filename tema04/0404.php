@@ -21,7 +21,7 @@ function validerPostnr($postnr)
     { 
       $lovligPostnr=false; 
     } 
-  else if (strlen($postnr)!=4)  /* postnr best�r ikke av 4 tegn */  
+  else if (strlen($postnr)!=4)  /* postnr best�r ikke av 4 tegn */ 
     { 
       $lovligPostnr=false; 
     } 
