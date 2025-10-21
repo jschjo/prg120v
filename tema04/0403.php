@@ -1,77 +1,50 @@
-<?php     /* Oppgave 0403 */ 
+<?php     /* Oppgave 3 */ 
 /* 
-/*    Programmet mottar klassekode fra et HTML-skjema  
-/*    Programmet sjekker om klassekode er korrekt fylt ut 
+/*    Programmet mottar emnekode fra et HTML-skjema  
+/*    Programmet sjekker om emnekode er korrekt fylt ut 
 */ 
-  $klassekode=$_POST ["svar"]; 
+  $emnekode=$_POST ["svar"]; 
  
-  $lovligKlassekode=true; 
+  $lovligEmnekode=true; 
  
-  if (!$klassekode)  /* klassekode er ikke fylt ut */ 
+  if (!$emnekode)  /* emnekode er ikke fylt ut */ 
     { 
-      $lovligKlassekode=false; 
-      print("Klassekode er ikke fylt ut <br />"); 
+      $lovligEmnekode=false; 
+      print("Emnekode er ikke fylt ut <br />"); 
     } 
-  else if (strlen($klassekode)!=7)  /* klassekode består ikke av 3 tegn */ 
+  else if (strlen($emnekode)!=7)  /* emnekode består ikke av 7 tegn */ 
     { 
-      $lovligKlassekode=false; 
-      print("Klassekode best&aring;r ikke av 7 tegn <br />"); 
+      $lovligEmnekode=false; 
+      print("Emnekode best&aring;r ikke av 7 tegn <br />"); 
     } 
   else  
+    { 
+      $del1=substr($emnekode,0,3);   /* henter ut de 3 første tegnene */ 
+      $del2=substr($emnekode,3,3);   /* henter ut de 3 neste tegnene */ 
+      $del3=substr($emnekode,6,1);   /* henter ut det siste tegnet */ 
+ 
+      if(!ctype_alpha($del1))  /* de 3 første tegnene inneholde ikke bare bokstaver */ 
         { 
-      $tegn1=$klassekode[0];   /* første tegn i klassekoden  */ 
-      $tegn2=$klassekode[1];   /* andre tegn i klassekoden  */ 
-      $tegn2=$klassekode[2];   /* tredje tegn i klassekoden  */ 
-      $tegn2=$klassekode[3];   /* fjerde tegn i klassekoden  */ 
-      $tegn2=$klassekode[4];   /* femte tegn i klassekoden  */ 
-      $tegn2=$klassekode[5];   /* sjette tegn i klassekoden  */ 
-      $tegn2=$klassekode[6];   /* syvende tegn i klassekoden  */ 
-
-      if (!ctype_alpha($tegn1))  /* tegn1 er ikke bokstav */  
+          $lovligEmnekode=false; 
+          print("Tegn 1-3 inneholder ikke bare bokstaver <br />"); 
+        } 
+ 
+      if(!ctype_digit($del2))  /* de 3 neste tegnene inneholde ikke bare siffre */ 
         { 
-          $lovligKlassekode=false; 
-          print("F&oslash;rste tegn er ikke en bokstav <br />"); 
+          $lovligEmnekode=false; 
+          print("Tegn 4-6 inneholder ikke bare siffre <br />"); 
         } 
    
-      if (!ctype_alpha($tegn2))  /* tegn2 er ikke bokstav */ 
+      if(!ctype_alpha($del3) && !ctype_digit($del3))  /* det siste tegnet inneholde ikke bokstav eller siffer */ 
         { 
-          $lovligKlassekode=false; 
-          print("Andre tegn er ikke en bokstav <br />"); 
+          $lovligEmnekode=false; 
+          print("Det siste tegnet inneholde ikke bokstav eller siffer <br />"); 
         } 
-
-      if (!ctype_alpha($tegn3))  /* tegn3 er ikke bokstav */ 
-        { 
-          $lovligKlassekode=false; 
-          print("Tredje tegn er ikke en bokstav <br />"); 
-        } 
-  
-      if (!ctype_digit($tegn4))  /* tegn4 er ikke et siffer */  
-        { 
-          $lovligKlassekode=false; 
-          print("Fjerde tegn er ikke et siffer  <br />"); 
-        } 
-
-      if (!ctype_digit($tegn5))  /* tegn5 er ikke et siffer */  
-        { 
-          $lovligKlassekode=false; 
-          print("Femte tegn er ikke et siffer  <br />"); 
-        } 
-
-      if (!ctype_digit($tegn6))  /* tegn6 er ikke et siffer */  
-        { 
-          $lovligKlassekode=false; 
-          print("Sjette tegn er ikke et siffer  <br />"); 
-        } 
-
-      if (!ctype_digit($tegn7))  /* tegn7 er ikke et siffer eller en bokstav */  
-        { 
-          $lovligKlassekode=false; 
-          print("Sjette tegn er ikke et siffer eller en bokstav  <br />"); 
-        } 
+    
     } 
  
-  if ($lovligKlassekode)  /* klassekode er  korrekt fylt ut */ 
+  if ($lovligEmnekode)  /* emnekode er korrekt fylt ut */ 
     { 
-      print("Klassekode er korrekt fylt ut <br />"); 
+      print ("Emnekode er korrekt fylt ut <br />");     
     } 
 ?> 
