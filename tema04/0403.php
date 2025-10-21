@@ -12,17 +12,21 @@
       $lovligKlassekode=false; 
       print("Klassekode er ikke fylt ut <br />"); 
     } 
-  else if (strlen($klassekode)!=3)  /* klassekode består ikke av 3 tegn */ 
+  else if (strlen($klassekode)!=7)  /* klassekode består ikke av 3 tegn */ 
     { 
       $lovligKlassekode=false; 
-      print("Klassekode best&aring;r ikke av 3 tegn <br />"); 
+      print("Klassekode best&aring;r ikke av 7 tegn <br />"); 
     } 
   else  
         { 
       $tegn1=$klassekode[0];   /* første tegn i klassekoden  */ 
       $tegn2=$klassekode[1];   /* andre tegn i klassekoden  */ 
-      $tegn3=$klassekode[2];   /* tredje tegn i klassekoden  */ 
- 
+      $tegn2=$klassekode[2];   /* tredje tegn i klassekoden  */ 
+      $tegn2=$klassekode[3];   /* fjerde tegn i klassekoden  */ 
+      $tegn2=$klassekode[4];   /* femte tegn i klassekoden  */ 
+      $tegn2=$klassekode[5];   /* sjette tegn i klassekoden  */ 
+      $tegn2=$klassekode[6];   /* syvende tegn i klassekoden  */ 
+
       if (!ctype_alpha($tegn1))  /* tegn1 er ikke bokstav */  
         { 
           $lovligKlassekode=false; 
@@ -34,11 +38,35 @@
           $lovligKlassekode=false; 
           print("Andre tegn er ikke en bokstav <br />"); 
         } 
-   
-      if (!ctype_digit($tegn3))  /* tegn3 er ikke et siffer */  
+
+      if (!ctype_alpha($tegn3))  /* tegn3 er ikke bokstav */ 
         { 
           $lovligKlassekode=false; 
-          print("Siste tegn er ikke et siffer  <br />"); 
+          print("Tredje tegn er ikke en bokstav <br />"); 
+        } 
+  
+      if (!ctype_digit($tegn4))  /* tegn4 er ikke et siffer */  
+        { 
+          $lovligKlassekode=false; 
+          print("Fjerde tegn er ikke et siffer  <br />"); 
+        } 
+
+      if (!ctype_digit($tegn5))  /* tegn5 er ikke et siffer */  
+        { 
+          $lovligKlassekode=false; 
+          print("Femte tegn er ikke et siffer  <br />"); 
+        } 
+
+      if (!ctype_digit($tegn6))  /* tegn6 er ikke et siffer */  
+        { 
+          $lovligKlassekode=false; 
+          print("Sjette tegn er ikke et siffer  <br />"); 
+        } 
+
+      if (!ctype_digit($tegn7))  /* tegn7 er ikke et siffer eller en bokstav */  
+        { 
+          $lovligKlassekode=false; 
+          print("Sjette tegn er ikke et siffer eller en bokstav  <br />"); 
         } 
     } 
  
