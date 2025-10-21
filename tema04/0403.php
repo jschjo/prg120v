@@ -19,9 +19,9 @@
     } 
   else  
     { 
-      $del1=substr($emnekode,0,3);   /* henter ut de 3 første tegnene */ 
-      $del2=substr($emnekode,3,3);   /* henter ut de 3 neste tegnene */ 
-      $del3=substr($emnekode,6,1);   /* henter ut det siste tegnet */ 
+      $del1=substr($emnekode,0,3);   /* substr($variabelnavn,start,lengde) henterut deler av en tekststreng, henter ut de 3 første tegnene */ 
+      $del2=substr($emnekode,3,3);   /* henter ut de 3 neste tegnene, dvs på plass 3: hent ut de tre neste tegnene
+      $del3=substr($emnekode,6,1);   /* henter ut det siste tegnet, dvs på plass 6, hent ut 1 tegn
  
       if(!ctype_alpha($del1))  /* de 3 første tegnene inneholde ikke bare bokstaver */ 
         { 
