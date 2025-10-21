@@ -1,33 +1,48 @@
-<?php     /* Oppgave 1 */ 
+<?php  /*  Oppgave 4 */ 
 /* 
 /*    Programmet mottar postnr fra et HTML-skjema  
-/*    Programmet sjekker om postnr er korrekt fylt ut 
+/*    Programmet sjekker om postnr er korrekt fylt ut ved bruk av en egendefinert fuksjon 
 */ 
-  $postnr=$_POST ["svar"]; 
  
+function validerPostnr($postnr) 
+{ 
+/* 
+/*  Hensikt 
+/*    Funksjonen sjekker om postnr er korrekt er fylt ut 
+/*  Parametre 
+/*    postnr = postnr som skal sjekkes 
+/*  Funksjonsverdi/Returverdi 
+/*    Funksjonen returnerer true hvis postnr er korrekt er fylt ut 
+/*    Funksjonen returnerer false ellers 
+*/ 
   $lovligPostnr=true; 
  
-  if (!$postnr)  /* postnr er ikke fylt ut (! foran betyr "ikke"*/ 
+  if (!$postnr)  /* postnr er ikke fylt ut */ 
     { 
       $lovligPostnr=false; 
-      print("Postnr er ikke fylt ut <br />"); 
     } 
-  else if (strlen($postnr)!=4)  /* postnr består ikke av 4 tegn  (strlen har med lengden på en tekststreng )*/ 
+  else if (strlen($postnr)!=4)  /* postnr best�r ikke av 4 tegn */  
     { 
       $lovligPostnr=false; 
-      print("Postnr best&aring;r ikke av 4 tegn <br />"); 
     } 
-  else 
+  else if (!ctype_digit($postnr))  /* minst ett av tegnene er ikke et siffer */ 
     { 
-      if (!ctype_digit($postnr))  /* ctype_digit($variabelnavn) tester ut om variabelen kun inneholder siffre */ 
-        { 
-          $lovligPostnr=false; 
-          print("Postnr best&aring;r ikke bare av siffre  <br />"); 
-        } 
+    $lovligPostnr=false; 
     } 
+    
+  return $lovligPostnr;   
+}  /*  Slutt p� funksjonen validerPostnr($postnr)  */ 
  
-  if ($lovligPostnr)  /* postnr er  korrekt fylt ut */ 
+  $postnr=$_POST ["postnr"]; 
+ 
+  $lovligPostnr=validerPostnr($postnr);  /* valideringsfunksjon utf�rt */ 
+ 
+  if ($lovligPostnr)  /* postnr er korrekt fylt ut */ 
     { 
       print("Postnr er korrekt fylt ut <br />"); 
     } 
-?>  
+  else  /* postnr er ikke korrekt fylt ut */ 
+    { 
+      print("Postnr er ikke korrekt fylt ut <br />"); 
+    } 
+?> 
