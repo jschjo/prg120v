@@ -11,7 +11,7 @@
 <form method="post" action="" id="registrerEmneSkjema" name="registrerEmneSkjema"> 
   Klassekode <input type="text" id="klassekode" name="klassekode" required /> <br/> 
   Klassenavn <input type="text" id="klassenavn" name="klassenavn" required /> <br/> 
-  Klassekode <select name="studiumkode" id="studiumkode"> 
+  Studiumkode <select name="studiumkode" id="studiumkode"> 
      <?php print("<option value=''>velg klasse </option>"); 
      include("dynamiske-funksjoner.php"); listeboksKlassekode(); ?>  
     </select>  <br/> 
@@ -24,9 +24,9 @@
     { 
       $klassekode=$_POST ["klassekode"]; 
       $klassenavn=$_POST ["klassenavn"]; 
-      $klassekode=$_POST ["klassekode"];   
+      $studiumkode=$_POST ["studiumkode"];   
  
-      if (!$klassekode || !$klassenavn || !$klassekode) 
+      if (!$klassekode || !$klassenavn || !$studiumkode) 
         { 
           print ("Alle felt m&aring; fylles ut"); 
         } 
@@ -47,7 +47,7 @@
               $sqlSetning="INSERT INTO klasse (klassekode,klassenavn,studiumkode) 
 VALUES('$emnekode','$emnenavn','$studiumkode');"; 
               mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; registrere data i databasen"); 
-              print ("F&oslash;lgende emne er n&aring; registrert: $klassekode $klassnavn $klassekode");  
+              print ("F&oslash;lgende emne er n&aring; registrert: $klassekode $klassnavn $studiumkode");  
             } 
         } 
     } 
