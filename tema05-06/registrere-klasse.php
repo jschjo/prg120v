@@ -13,7 +13,7 @@
   Klassenavn <input type="text" id="klassenavn" name="klassenavn" required /> <br/> 
   Studiumkode <select name="studiumkode" id="studiumkode"> 
      <?php print("<option value=''>velg klasse </option>"); 
-     include("dynamiske-funksjoner.php"); listeboksKlassekode(); ?>  
+     include("dynamiske-funksjoner.php"); listeboksStudiumkode(); ?>  
     </select>  <br/> 
   <input type="submit" value="Registrer klasse" id="registrerKlasseKnapp" name="registrerKlasseKnapp" />  
   <input type="reset" value="Nullstill" id="nullstill" name="nullstill" /> <br /> 
