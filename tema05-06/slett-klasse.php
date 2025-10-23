@@ -18,7 +18,7 @@ include("dynamiske-funksjoner.php"); listeboksKlassekode(); ?>
 if (isset($_POST ["slettKlasseKnapp"]))
 {
 include("db-tilkobling.php"); /* tilkobling til database-serveren utført og valg av database foretatt */
-$emnekode=$_POST ["klassekode"];
+$klassekode=$_POST ["klassekode"];
 if (!$klassekode)
 {
 print ("Det er ikke valgt noen klasse");
@@ -29,7 +29,7 @@ include("db-tilkobling.php"); /* tilkobling til database-serveren utført og val
 $sqlSetning="DELETE FROM klasse WHERE klassekode='$klassekode';";
 mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; slette data i databasen");
 /* SQL-setning sendt til database-serveren */
-print ("F&oslash;lgende emne er n&aring; slettet: $klassekode <br />");
+print ("F&oslash;lgende klasse er n&aring; slettet: $klassekode <br />");
 }
 }
 ?>
