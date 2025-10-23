@@ -63,9 +63,9 @@ function listeboksKlassekode ()
       $rad=mysqli_fetch_array($sqlResultat);  /* ny rad hentet fra spørringsresultatet */ 
       $emnekode=$rad["klassekode"];     
       $emnenavn=$rad["klassenavn"];         
-      $studiumkode=$rad["emnekode"];  
+      $studiumkode=$rad["studiumkode"];  
     
-      print("<option value='$klassekode'>$klassekode $klassenavn </option>");  /* ny verdi i listeboksen laget 
+      print("<option value='$klassekode'>$klassekode $studiumkode </option>");  /* ny verdi i listeboksen laget 
 */ 
     } 
 } 
