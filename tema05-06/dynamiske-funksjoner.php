@@ -3,6 +3,7 @@
 /*  denne filen inneholder følgende dynamiske funksjoner: 
 /*    listeboksStudiumkode () 
 /*    listeboksEmnekode () 
+/*    listeboksKlassekode () 
 */ 
  
  
@@ -64,7 +65,7 @@ function listeboksKlassekode ()
       $emnenavn=$rad["klassenavn"];         
       $studiumkode=$rad["emnekode"];  
     
-      print("<option value='$klassekode'>$klassenavn $emnekode </option>");  /* ny verdi i listeboksen laget 
+      print("<option value='$klassekode'>$klassekode $klassenavn </option>");  /* ny verdi i listeboksen laget 
 */ 
     } 
 } 
