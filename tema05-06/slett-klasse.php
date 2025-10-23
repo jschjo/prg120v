@@ -32,7 +32,7 @@
         {   
           include("db-tilkobling.php");  /* tilkobling til database-serveren utført og valg av database foretatt */ 
    
-          $sqlSetning="DELETE FROM klasse WHERE klassekode='$studiumkode';"; 
+          $sqlSetning="DELETE FROM klasse WHERE klassekode='$klassekode';"; 
           mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; slette data i databasen"); 
             /* SQL-setning sendt til database-serveren */ 
    

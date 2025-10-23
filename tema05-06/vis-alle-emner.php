@@ -11,7 +11,7 @@
 SQL-setning sendt til database-serveren */ 
   $antallRader=mysqli_num_rows($sqlResultat);  /* antall rader i resultatet beregnet */ 
  
-  print ("<h3>Registrerte emnee </h3>");  
+  print ("<h3>Registrerte emne </h3>");  
   print ("<table border=1>"); 
   print ("<tr><th align=left>emnekode</th> <th align=left>emnenavn</th> <th align=left>studiumkode</th> 
 </tr>"); 
