@@ -1,29 +1,29 @@
-<?php  /* slett-studium */ 
+<?php  /* slett-klasse */ 
 /* 
-/*  Programmet lager et skjema for å kunne slette et studium 
-/*  Programmet sletter det valgte studiet 
+/*  Programmet lager et skjema for å kunne slette en klasse
+/*  Programmet sletter den valgte klassen 
 */ 
 ?>  
  
 <script src="funksjoner.js"> </script> 
  
-<h3>Slett studium</h3> 
+<h3>Slett klasse</h3> 
  
-<form method="post" action="" id="slettStudiumSkjema" name="slettStudiumSkjema" onSubmit="return bekreft()"> 
-  Studium  
-  <select name="studiumkode" id="studiumkode"> 
-    <?php print("<option value=''>velg studium </option>"); 
-     include("dynamiske-funksjoner.php"); listeboksStudiumkode(); ?>  
+<form method="post" action="" id="slettKlasseSkjema" name="slettKlasseSkjema" onSubmit="return bekreft()"> 
+  Klasse  
+  <select name="klassekode" id="klassekode"> 
+    <?php print("<option value=''>velg klasse </option>"); 
+     include("dynamiske-funksjoner.php"); listeboksKlassekode(); ?>  
   </select>  <br/> 
-  <input type="submit" value="Slett studium" name="slettStudiumKnapp" id="slettStudiumKnapp" />  
+  <input type="submit" value="Slett klasse" name="slettKlasseKnapp" id="slettKlasseKnapp" />  
 </form> 
  
 <?php 
-  if (isset($_POST ["slettStudiumKnapp"]))  
+  if (isset($_POST ["slettKlasseKnapp"]))  
     { 
-      $studiumkode=$_POST ["studiumkode"];    
+      $klassekode=$_POST ["klassekode"];    
     
-      if (!$studiumkode) 
+      if (!$klassekode) 
         { 
           print ("Det er ikke valgt noe studium");  
  
@@ -32,11 +32,11 @@
         {   
           include("db-tilkobling.php");  /* tilkobling til database-serveren utført og valg av database foretatt */ 
    
-          $sqlSetning="DELETE FROM studium WHERE studiumkode='$studiumkode';"; 
+          $sqlSetning="DELETE FROM klasse WHERE klassekode='$klassekode';"; 
           mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; slette data i databasen"); 
             /* SQL-setning sendt til database-serveren */ 
    
-          print ("F&oslash;lgende studium er n&aring; slettet: $studiumkode  <br />"); 
+          print ("F&oslash;lgende klasse er n&aring; slettet: $klassekode  <br />"); 
         }       
     } 
   ?> 
