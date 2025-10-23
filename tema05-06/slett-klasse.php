@@ -21,9 +21,9 @@
 <?php 
   if (isset($_POST ["slettKlasseKnapp"]))  
     { 
-      $studiumkode=$_POST ["klassekode"];    
+      $klassekode=$_POST ["klassekode"];    
     
-      if (!$studiumkode) 
+      if (!$klassekode) 
         { 
           print ("Det er ikke valgt noen klasse");  
  
