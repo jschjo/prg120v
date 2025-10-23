@@ -47,7 +47,7 @@
               $sqlSetning="INSERT INTO emne (emnekode,emnenavn,studiumkode) 
 VALUES('$emnekode','$emnenavn','$studiumkode');"; 
               mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; registrere data i databasen"); 
-              print ("F&oslash;lgende emne er n&aring; registrert: $emnekode $emnekode $studiumkode");  
+              print ("F&oslash;lgende emne er n&aring; registrert: $emnekode $emnenavn $studiumkode");  
             } 
         } 
     } 
