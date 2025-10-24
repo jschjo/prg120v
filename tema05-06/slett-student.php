@@ -18,7 +18,7 @@ include("dynamiske-funksjoner.php"); listeboksBrukernavn(); ?>
 if (isset($_POST ["slettBrukerKnapp"]))
 {
 include("db-tilkobling.php"); /* tilkobling til database-serveren utført og valg av database foretatt */
-$emnekode=$_POST ["brukernavn"];
+$brukernavn=$_POST ["brukernavn"];
 if (!$brukernavn)
 {
 print ("Det er ikke valgt noen student");
