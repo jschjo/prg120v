@@ -8,12 +8,12 @@
  
 <h3>Registrer student </h3> 
  
-<form method="post" action="" id="registrerEmneSkjema" name="registrerEmneSkjema"> 
+<form method="post" action="" id="registrerStudentSkjema" name="registrerStudentSkjema"> 
     Brukernavn <input type="text" id="brukernavn" name="brukernavn" required /> <br/> 
     Fornavn <input type="text" id="fornavn" name="fornavn" required /> <br/>        
     Etternavn <input type="text" id="etternavn" name="etternavn" required /> <br/>     
     Klassekode <select name="klassekode" id="klassekode"> 
-     <?php print("<option value=''>velg studium </option>"); 
+     <?php print("<option value=''>velg klasse </option>"); 
      include("dynamiske-funksjoner.php"); listeboksStudentkode(); ?>  
     </select>  <br/> 
   <input type="submit" value="Registrer student" id="registrerStudentKnapp" name="registrerStudentKnapp" />  
@@ -24,7 +24,7 @@
   if (isset($_POST ["registrerStudentKnapp"])) 
     { 
       $brukernavn=$_POST ["brukernavn"]; 
-      $fornavn=$_POST ["forenavn"]; 
+      $fornavn=$_POST ["fornavn"]; 
       $etternavn=$_POST ["etternavn"];     
       $klassekode=$_POST ["klassekode"];   
  
