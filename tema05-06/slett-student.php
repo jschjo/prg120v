@@ -5,11 +5,11 @@
 */
 ?>
 <script src="funksjoner.js"> </script>
-<h3>Slett student</h3>
+<h3>Slett brukernavn</h3>
 <form method="post" action="" id="slettStudentSkjema" name="slettStudentSkjema" onSubmit="return
 bekreft()">
-Emne <select name="brukernavn" id="brukernavn">
-<?php print("<option value=''>velg student </option>");
+Brukernavn <select name="brukernavn" id="brukernavn">
+<?php print("<option value=''>velg brukernavn </option>");
 include("dynamiske-funksjoner.php"); listeboksKlassekode(); ?>
 </select> <br/>
 <input type="submit" value="Slett student" name="slettBrukerKnapp" id="slettBrukerKnapp" />
