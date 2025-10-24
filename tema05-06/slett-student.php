@@ -4,7 +4,7 @@
 /* Programmet sletter info om studenten
 */
 ?>
-<script src="funksjoner.js"> </script>
+<script src="tema05-06/funksjoner.js"> </script>
 <h3>Slett student</h3>
 <form method="post" action="" id="slettStudentSkjema" name="slettStudentSkjema" onSubmit="return
 bekreft(funksjoner.js)">
