@@ -27,7 +27,7 @@
       $fornavn=$_POST ["fornavn"]; 
       $etternavn=$_POST ["etternavn"];      
  
-      if (!$brukernavn || !$fornavn !$etternavn || !$klassekode) 
+      if (!$brukernavn || !$fornavn !$etternavn) 
         { 
           print ("Alle felt m&aring; fylles ut"); 
         } 
