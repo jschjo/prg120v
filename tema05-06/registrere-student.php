@@ -10,7 +10,8 @@
 <form method="post" action="" id="registrerStudentSkjema" name="registrerStudentSkjema"> 
   Brukernavn <input type="text" id="brukernavn" name="brukernavn" required /> <br/> 
   Fornavn <input type="text" id="fornavn" name="fornavn" required /> <br/> 
-  Etternavn <input type="text" id="etternavn" name="etternavn" required /> <br/>  
+  Etternavn <input type="text" id="etternavn" name="etternavn" required /> <br/> 
+  Studiumkode <select name="studiumkode" id="studiumkode"> 
   <input type="submit" value="Registrer student" id="registrerStudentKnapp" name="registrerStudentKnapp" />  
   <input type="reset" value="Nullstill" id="nullstill" name="nullstill" /> <br /> 
 </form> 
@@ -20,8 +21,9 @@
     { 
       $studentkode=$_POST ["studentkode"]; 
       $studentnavn=$_POST ["studentnavn"]; 
+      $studiumkode=$_POST ["studiumkode"];   
  
-      if (!$studentkode || !$studentnavn) 
+      if (!$studentkode || !$studentnavn || !$studiumkode)
         { 
           print ("Alle felt m&aring; fylles ut");  
         } 
@@ -44,7 +46,7 @@ VALUES('$studentkode','$studentnavn');";
               mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; registrere data i databasen"); 
                 /* SQL-setning sendt til database-serveren */ 
  
-              print ("F&oslash;lgende student er n&aring; registrert: $studentkode $studentnavn"); 
+              print ("F&oslash;lgende student er n&aring; registrert: $studentkode $studentnavn $studiumkode"); 
             } 
         } 
     } 
