@@ -7,7 +7,7 @@
 <script src="funksjoner.js"> </script>
 <h3>Slett student</h3>
 <form method="post" action="" id="slettStudentSkjema" name="slettStudentSkjema" onSubmit="return
-bekreft()">
+bekreft(funksjoner.js)">
 Student
 <select name="brukernavn" id="brukernavn">
 <?php print("<option value=''>velg student </option>");
