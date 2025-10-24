@@ -1,4 +1,4 @@
-<?php     /* vis-alle-stjdenter */ 
+<?php     /* vis-alle-studenter */ 
 /* 
 /*    Programmet skriver ut alle registrerte studenter  
 */ 
@@ -6,24 +6,25 @@
  
   include("db-tilkobling.php");  /* tilkobling til database-serveren utført og valg av database foretatt */ 
  
-  $sqlSetning="SELECT * FROM emne ORDER BY emnekode;"; 
+  $sqlSetning="SELECT * FROM brukernavn ORDER BY brukernavn;"; 
   $sqlResultat=mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; hente data fra databasen");  /* 
 SQL-setning sendt til database-serveren */ 
   $antallRader=mysqli_num_rows($sqlResultat);  /* antall rader i resultatet beregnet */ 
  
-  print ("<h3>Registrerte emnee </h3>");  
+  print ("<h3>Registrerte studenter </h3>");  
   print ("<table border=1>"); 
-  print ("<tr><th align=left>emnekode</th> <th align=left>emnenavn</th> <th align=left>studiumkode</th> 
+  print ("<tr><th align=left>brukernavn</th> <th align=left>fornavn</th> align=left>etternavn</th> <th align=left>klassekode</th> 
 </tr>"); 
  
   for ($r=1;$r<=$antallRader;$r++) 
     { 
       $rad=mysqli_fetch_array($sqlResultat);  /* ny rad hentet fra spørringsresultatet */ 
-      $emnekode=$rad["emnekode"];  
-      $emnenavn=$rad["emnenavn"];  
-      $studiumkode=$rad["studiumkode"]; 
+      $brukernavn=$rad["brukernavn"];  
+      $fornavn=$rad["fornavn"];  
+      $etternavn=$rad["etternavn"];       
+      $klassekode=$rad["klassekode"]; 
  
-      print ("<tr> <td> $emnekode </td> <td> $emnenavn </td> <td> $studiumkode </td> </tr>");   
+      print ("<tr> <td> $brukernavn </td> <td> $fornavn </td> <td> $etternavn </td> <td> $klassekode </td> </tr>");   
     } 
   print ("</table>");  
  
