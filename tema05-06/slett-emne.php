@@ -6,9 +6,9 @@
 ?>
 <script src="funksjoner.js"> </script>
 <h3>Slett emne</h3>
-<form method="post" action="" id="slettEmneSkjema" name="slettEmneSkjema" onSubmit="return
-bekreft()">
-Emne <select name="emnekode" id="emnekode">
+<form method="post" action="" id="slettEmneSkjema" name="slettEmneSkjema" onSubmit="return bekreft()">
+Emne 
+<select name="emnekode" id="emnekode">
 <?php print("<option value=''>velg emne </option>");
 include("dynamiske-funksjoner.php"); listeboksEmnekode(); ?>
 </select> <br/>
