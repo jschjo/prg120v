@@ -5,7 +5,7 @@
 */
 ?>
 <script src="funksjoner.js"> </script>
-<h3>Slett brukernavn</h3>
+<h3>Slett student</h3>
 <form method="post" action="" id="slettStudentSkjema" name="slettStudentSkjema" onSubmit="return
 bekreft()">
 Brukernavn <select name="brukernavn" id="brukernavn">
