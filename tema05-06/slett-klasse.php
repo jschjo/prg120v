@@ -1,7 +1,7 @@
 <?php /* slett-klasse */
 /*
 /* Programmet lager et skjema for å kunne slette en klasse
-/* Programmet sletter det valgte emnet
+/* Programmet sletter den valgte klassen
 */
 ?>
 <script src="funksjoner.js"> </script>

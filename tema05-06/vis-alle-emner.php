@@ -26,6 +26,5 @@ SQL-setning sendt til database-serveren */
       print ("<tr> <td> $emnekode </td> <td> $emnenavn </td> <td> $studiumkode </td> </tr>");   
     } 
   print ("</table>");  
- 
-   
+  
 ?> 

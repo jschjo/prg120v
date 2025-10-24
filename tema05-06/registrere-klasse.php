@@ -1,7 +1,7 @@
 <?php  /* registrer-klasse */ 
 /* 
 /*    Programmet lager et html-skjema for å registrere en klasse 
-/*    Programmet registrerer data i databasen (klassekode og klassenavn)
+/*    Programmet registrerer data i databasen (klassekode, klassenavn og studiumkode)
 */ 
      
 ?>  

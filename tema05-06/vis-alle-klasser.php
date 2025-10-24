@@ -1,6 +1,6 @@
 <?php     /* vis-alle-klasser */ 
 /* 
-/*    Programmet skriver ut alle registrerte emner  
+/*    Programmet skriver ut alle klasser 
 */ 
    
  

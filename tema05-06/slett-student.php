@@ -1,7 +1,7 @@
 <?php /* slett-student */
 /*
 /* Programmet lager et skjema for å kunne slette en student
-/* Programmet sletter info om studenten
+/* Programmet sletter data om studenten
 */
 ?>
 <script src="funksjoner.js"> </script>
