@@ -9,7 +9,7 @@
 <form method="post" action="" id="slettStudentSkjema" name="slettStudentSkjema" onSubmit="return
 bekreft()">
 Student <select name="brukernavn" id="brukernavn">
-<?php print("<option value=''>velg brukernavn </option>");
+<?php print("<option value=''>velg student </option>");
 include("dynamiske-funksjoner.php"); listeboksBrukernavn(); ?>
 </select> <br/>
 <input type="submit" value="Slett student" name="slettBrukerKnapp" id="slettBrukerKnapp" />
