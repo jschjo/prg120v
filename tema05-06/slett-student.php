@@ -8,7 +8,7 @@
 <h3>Slett student</h3>
 <form method="post" action="" id="slettStudentSkjema" name="slettStudentSkjema" onSubmit="return
 bekreft()">
-Brukernavn <select name="student" id="brukernavn">
+Brukernavn <select name="brukernavn" id="brukernavn">
 <?php print("<option value=''>velg brukernavn </option>");
 include("dynamiske-funksjoner.php"); listeboksBrukernavn(); ?>
 </select> <br/>
