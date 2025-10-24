@@ -18,8 +18,8 @@
 <?php  
   if (isset($_POST ["registrerStudentKnapp"]))  
     { 
-      $studiumkode=$_POST ["studentkode"]; 
-      $studiumnavn=$_POST ["studentnavn"]; 
+      $studentkode=$_POST ["studentkode"]; 
+      $studentnavn=$_POST ["studentnavn"]; 
  
       if (!$studentkode || !$studentnavn) 
         { 
