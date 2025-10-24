@@ -28,7 +28,7 @@
       $etternavn=$_POST ["etternavn"];     
       $klassekode=$_POST ["klassekode"];   
  
-      if (!$klassekode || !$klassenavn || !$studiumkode) 
+      if (!$brukernavn || !$fornavn || $etternavn || !$klassekode) 
         { 
           print ("Alle felt m&aring; fylles ut"); 
         } 
@@ -40,7 +40,7 @@
           $sqlResultat=mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; hente data fra databasen"); 
           $antallRader=mysqli_num_rows($sqlResultat);  
  
-          if ($antallRader!=0)  /* faget er registrert fra før */ 
+          if ($antallRader!=0)  /* studenten er registrert fra før */ 
             { 
               print ("Studenten er registrert fra f&oslashr"); 
             } 
