@@ -7,20 +7,21 @@
  
 <h3>Registrer student </h3> 
  
-<form method="post" action="" id="registrerStudiumSkjema" name="registrerStudiumSkjema"> 
-  Studiumkode <input type="text" id="studiumkode" name="studiumkode" required /> <br/> 
-  Studiumnavn <input type="text" id="studiumnavn" name="studiumnavn" required /> <br/> 
-  <input type="submit" value="Registrer studium" id="registrerStudiumKnapp" name="registrerStudiumKnapp" />  
+<form method="post" action="" id="registrerStudentSkjema" name="registrerStudentSkjema"> 
+  Brukernavn <input type="text" id="brukernavn" name="brukernavn" required /> <br/> 
+  Fornavn <input type="text" id="fornavn" name="fornavn" required /> <br/> 
+  Etternavn <input type="text" id="etternavn" name="etternavn" required /> <br/>  
+  <input type="submit" value="Registrer student" id="registrerStudentKnapp" name="registrerStudentKnapp" />  
   <input type="reset" value="Nullstill" id="nullstill" name="nullstill" /> <br /> 
 </form> 
  
 <?php  
-  if (isset($_POST ["registrerStudiumKnapp"]))  
+  if (isset($_POST ["registrerStudentKnapp"]))  
     { 
-      $studiumkode=$_POST ["studiumkode"]; 
-      $studiumnavn=$_POST ["studiumnavn"]; 
+      $studiumkode=$_POST ["studentkode"]; 
+      $studiumnavn=$_POST ["studentnavn"]; 
  
-      if (!$studiumkode || !$studiumnavn) 
+      if (!$studentkode || !$studentnavn) 
         { 
           print ("Alle felt m&aring; fylles ut");  
         } 
@@ -28,22 +29,22 @@
         { 
           include("db-tilkobling.php");  /* tilkobling til database-serveren utført og valg av database foretatt */ 
  
-          $sqlSetning="SELECT * FROM studium WHERE studiumkode='$studiumkode';"; 
+          $sqlSetning="SELECT * FROM student WHERE studentkode='$studentkode';"; 
           $sqlResultat=mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; hente data fra databasen"); 
           $antallRader=mysqli_num_rows($sqlResultat);  
  
-          if ($antallRader!=0)  /* studiet er registrert fra før */ 
+          if ($antallRader!=0)  /* studenten er registrert fra før */ 
             { 
-              print ("Studiet er registrert fra f&oslashr"); 
+              print ("Studenten er registrert fra f&oslashr"); 
             } 
           else 
             { 
-              $sqlSetning="INSERT INTO studium (studiumkode,studiumnavn) 
-VALUES('$studiumkode','$studiumnavn');"; 
+              $sqlSetning="INSERT INTO student (studentkode,studentnavn) 
+VALUES('$studentkode','$studentnavn');"; 
               mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; registrere data i databasen"); 
                 /* SQL-setning sendt til database-serveren */ 
  
-              print ("F&oslash;lgende studium er n&aring; registrert: $studiumkode $studiumnavn"); 
+              print ("F&oslash;lgende student er n&aring; registrert: $studentkode $studentnavn"); 
             } 
         } 
     } 
