@@ -14,14 +14,14 @@
     Etternavn <input type="text" id="etternavn" name="etternavn" required /> <br/>     
     Klassekode <select name="klassekode" id="klassekode"> 
      <?php print("<option value=''>velg klasse </option>"); 
-     include("dynamiske-funksjoner.php"); listeboksStudentkode(); ?>  
+     include("dynamiske-funksjoner.php"); listeboksKlasseKode(); ?>  
     </select>  <br/> 
-  <input type="submit" value="Registrer student" id="registrerStudentKnapp" name="registrerStudentKnapp" />  
+  <input type="submit" value="Registrer student" id="registrerBrukerKnapp" name="registrerBrukerKnapp" />  
   <input type="reset" value="Nullstill" id="nullstill" name="nullstill" /> <br /> 
 </form> 
  
 <?php  
-  if (isset($_POST ["registrerStudentKnapp"])) 
+  if (isset($_POST ["registrerBrukerKnapp"])) 
     { 
       $brukernavn=$_POST ["brukernavn"]; 
       $fornavn=$_POST ["fornavn"]; 
