@@ -8,7 +8,8 @@
 <h3>Slett klasse</h3>
 <form method="post" action="" id="slettKlasseSkjema" name="slettKlasseSkjema" onSubmit="return
 bekreft()">
-Klasse <select name="klassekode" id="klassekode">
+Klasse 
+<select name="klassekode" id="klassekode">
 <?php print("<option value=''>velg klasse </option>");
 include("dynamiske-funksjoner.php"); listeboksKlassekode(); ?>
 </select> <br/>
