@@ -21,11 +21,12 @@
 </form> 
  
 <?php  
-  if (isset($_POST ["registrerKlasseKnapp"])) 
+  if (isset($_POST ["registrerStudentKnapp"])) 
     { 
-      $klassekode=$_POST ["klassekode"]; 
-      $klassenavn=$_POST ["klassenavn"]; 
-      $studiumkode=$_POST ["studiumkode"];   
+      $brukernavn=$_POST ["brukernavn"]; 
+      $fornavn=$_POST ["forenavn"]; 
+      $etternavn=$_POST ["etternavn"];     
+      $klassekode=$_POST ["klassekode"];   
  
       if (!$klassekode || !$klassenavn || !$studiumkode) 
         { 
