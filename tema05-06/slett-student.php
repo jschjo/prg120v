@@ -4,10 +4,9 @@
 /* Programmet sletter info om studenten
 */
 ?>
-<script src="tema05-06/funksjoner.js"> </script>
+<script src="funksjoner.js"> </script>
 <h3>Slett student</h3>
-<form method="post" action="" id="slettStudentSkjema" name="slettStudentSkjema" onSubmit="return
-bekreft(tema05-06/funksjoner.js)">
+<form method="post" action="" id="slettStudentSkjema" name="slettStudentSkjema" onSubmit="return bekreft()">
 Student
 <select name="brukernavn" id="brukernavn">
 <?php print("<option value=''>velg student </option>");
