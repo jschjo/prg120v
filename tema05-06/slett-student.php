@@ -26,7 +26,7 @@ print ("Det er ikke valgt noen student");
 else
 {
 include("db-tilkobling.php"); /* tilkobling til database-serveren utført og valg av database foretatt */
-$sqlSetning="DELETE FROM brukernavn WHERE emnekode='$brukernavn';";
+$sqlSetning="DELETE FROM brukernavn WHERE brukernavn='$brukernavn';";
 mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; slette data i databasen");
 /* SQL-setning sendt til database-serveren */
 print ("F&oslash;lgende emne er n&aring; slettet: $brukernavn <br />");
