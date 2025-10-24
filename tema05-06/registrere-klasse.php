@@ -8,7 +8,7 @@
  
 <h3>Registrer klasse </h3> 
  
-<form method="post" action="" id="registrerEmneSkjema" name="registrerEmneSkjema"> 
+<form method="post" action="" id="registrerStudentSkjema" name="registrerStudentSkjema"> 
   Klassekode <input type="text" id="klassekode" name="klassekode" required /> <br/> 
   Klassenavn <input type="text" id="klassenavn" name="klassenavn" required /> <br/> 
   Studiumkode <select name="studiumkode" id="studiumkode"> 
